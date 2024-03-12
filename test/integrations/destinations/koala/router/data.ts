@@ -25,6 +25,7 @@ export const data = [
                 annonymousId: 'annonymous-uuid',
                 event: 'User Signed Up',
                 type: 'track',
+                channel: 'web',
                 messageId: '84e26acc-56a5-4835-8233-591137fca468',
                 traits: {
                   email: 'johndoe@somemail.com'
@@ -59,6 +60,7 @@ export const data = [
                 },
               },
               message: {
+                channel: 'web',
                 userId: 'user-uuid',
                 annonymousId: 'annonymous-uuid',
                 event: 'User Deleted account',
@@ -127,6 +129,7 @@ export const data = [
                 version: '1',
                 method: 'POST',
                 headers: {
+                  'source-plataform': 'web',
                   'content-type': 'application/json',
                 },
               },
@@ -175,6 +178,7 @@ export const data = [
                 version: '1',
                 method: 'POST',
                 headers: {
+                  'source-plataform': 'web',
                   'content-type': 'application/json',
                 },
               },

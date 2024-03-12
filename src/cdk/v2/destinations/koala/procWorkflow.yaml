@@ -60,6 +60,7 @@ steps:
       response.body.JSON = $.context.payload;
       response.endpoint = "https://api2.getkoala.com/web/projects/" + .destination.Config.publicKey + "/batch";
       response.headers = {
+        "source-plataform": .message.channel ?? .event.channel, 
         "content-type": "application/json"
       };
       response
